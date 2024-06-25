@@ -6,26 +6,35 @@
          Gauntlet {Sub-Archives}
         </title>
     </head>
-    <div class="center">
-        <h1>
-            <span style="text-align: center;"> Excuse me bro... </span>
-        </h1>
-    
-        <audio id="englishSpanish" preload="auto">
-            <source src="song.mp3" type="audio/mp3">
-            <source src="song.mp3" type="audio/mpg">
-            No audio for some reason.
-        </audio>
-        <button type="button" onclick="getElementById('englishSpanish').play();show()" style="color:white;background-color:rgb(8, 8, 8); height: 200px; width:500px;" id="bttn">
-            <span style="font-size: xx-large;"><b>English or Spanish?</b></span>
-        </button>
-        <img id="playerID" src="">
-    </div>
+    <body>
+        <div class="center">
+            <h1 id="text1">
+                <span style="text-align: center;"> Excuse me bro... </span>
+            </h1>
+            <button type="button" onclick="getElementById('englishSpanish').play();show()" style="color:white;background-color:rgb(8, 8, 8); height: 200px; width:500px;" id="bttn">
+                <span style="font-size: xx-large;"><b>English or Spanish?</b></span>
+            </button>
+            <img id="playerID" src="">
+            <h1 id="text2" style="color:black;"> 
+                Whoever Moves First is Gay.
+            </h1>
+            <button onclick="document.location='/HTML/newHTML.html'" style="color:white; background-color:blue;"> <-- BACK </button>
+        </div>
+    </body>
+    <audio id="englishSpanish" preload="auto">
+        <source src="song.mp3" type="audio/mp3">
+        <source src="song.mp3" type="audio/mpg">
+    </audio>
     <script>
         function show() {
             let playerID = document.getElementById("playerID")
             playerID.src = "/html/players.png"
+            playerID.style = "heigt:900px;width:900px;"
+            document.getElementById("text2")
+                text2.style = "color:rgb(255, 255, 255)"
             document.getElementById("bttn")
+                .style.display = "none";
+            document.getElementById("text1")
                 .style.display = "none";
         }
     </script>
