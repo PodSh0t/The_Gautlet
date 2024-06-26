@@ -1,12 +1,10 @@
-div {
+/*this should style the whole page except buttons*/
+*:not(.button) {
     background-color: black; 
     color: white;
-    height: 900px;
-    width: 960px;
     text-align: center;
-}
-.center{
-    margin: auto;
-    width: 100%;
-    padding: 10px;
-}
+};
+/*this doesnt work for some reason*/
+.gold {
+    color:goldenrod
+};
