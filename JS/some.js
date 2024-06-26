@@ -1,5 +1,3 @@
-console.log("Hello world!!");
-
 function nuke() {
     document.getElementById("everything")
         .style.display = "none";

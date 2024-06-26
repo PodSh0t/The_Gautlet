@@ -1,6 +1,6 @@
 function show() {
     document.getElementById("playerID")
-        .src = "/html/players.png";
+        .src = "../Resources/players.png";
         playerID.style = "heigt:900px;width:900px;";
     document.getElementById("text2")
         .innerHTML = "Whoever Move First is Gay.";
