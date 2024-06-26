@@ -1,10 +1,10 @@
 /*this should style the whole page except buttons*/
 *:not(.button) {
-    background-color: black; 
-    color: white;
-    text-align: center;
-};
+  background-color: black;
+  color: white;
+  text-align: center;
+}
 /*this doesnt work for some reason*/
 .gold {
-    color:goldenrod
-};
+  color: goldenrod;
+}
