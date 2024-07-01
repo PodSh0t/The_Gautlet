@@ -1,10 +1,57 @@
 /*this should style the whole page except buttons*/
 *:not(.button) {
-  background-color: black;
   color: white;
   text-align: center;
 }
-/*this doesnt work for some reason*/
+body {
+  background-image: url(https://i.pinimg.com/736x/4b/af/2d/4baf2d48f65e51a0ec3d788e366e6b6c.jpg);
+  background-size: cover;
+  background-position: top,right;
+  background-repeat: no-repeat;
+  background-color: black;
+  position: relative;
+}
+/*fixd*/
 .gold {
   color: goldenrod;
+}
+/*Different button classes/
+seperated colors and font changes for shits n giggles n ease of use*/
+.btnRound {
+border-radius: 12px;
+}
+.btnBlue {
+  background-color: blue;
+  color: white;
+  border: 2px solid rgb(150, 150, 150);
+}
+.btnBlue:hover {background-color: rgb(0, 0, 100);}
+.btnRed {
+  background-color: red;
+  color: white;
+}
+.btnRed:hover {
+  background-color: rgb(100, 0, 0);
+  box-shadow: 0 12px 16px 0 rgba(255, 0, 0, 0.24), 0 17px 50px 0 rgba(255, 0, 0, 0.19)
+}
+.btnWhite {
+  background-color: white;
+  color: black;
+}
+.btnWhite:hover {background-color: rgb(160, 160, 160);}
+.btnLarge {
+  font-weight: bold;
+  font-size: 25px;
+  height: 50px;
+  width: 100%;
+}
+/*hover functionality*/
+.button {
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+/*this is supposed to group the buttons closer together as a block/
+however looks like shit and doesnt center*/
+.btnGroup {
+  float: left;
 }
