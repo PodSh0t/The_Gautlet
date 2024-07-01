@@ -6,7 +6,18 @@
     <title>The Gauntlet {Sub-Archives}</title>
   </head>
   <body>
-    <div id="playerContainer">
+    <ul>
+      <li><a href="../index.html">
+        Home
+      </a></li>
+      <li><a class="current" href="../HTML/page2.html">
+        Sub-Archive
+      </a></li>
+      <li><a href="../HTML/showRoom.html">
+        Showroom
+      </a></li>
+    </ul>
+    <div id="playerContainer" style="padding:20px;margin-top:30px;z-index: -1;">
       <h1 id="text1">
         Excuse me bro...
       </h1>
@@ -15,22 +26,21 @@
         id="bttn"
         onclick="getElementById('englishSpanish').play();show()"
       >
-        <!-- spans suck! cant seem to keep css from styling button text even with class.
-        this is why theres the redundant background color style, after i learn more css will
-        probably replace whole thing. -->
         English or Spanish?
       </button>
-      <img class="" id="playerID" src="" />
+      <img id="playerID" style="z-index: -1;"/>
     </div>
-    <div>
-      <h1 id="text2"></h1>
+    <h1 id="text2"></h1>
+        <!--Cant figure out why sometimes the image while rotating makes this button unclickable
+        z-indexing seems to do nada-->
       <button
         class="button btnBlue btnRound"
-        onclick="document.location='../index.html'"
+        id="reload"
+        style="display: none"
+        onclick="document.location='../HTML/page2.html'"
       >
         <-- BACK
       </button>
-    </div>
   </body>
   <audio id="englishSpanish" preload="auto">
     <source src="../Resources/song.mp3" type="audio/mp3" />

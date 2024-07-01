@@ -2,6 +2,35 @@
   color: white;
   text-align: center;
 }
+/*navbar*/
+ul {
+  position: fixed;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: rgb(30, 30, 30);
+  border: 1px solid white;
+  z-index: 2;
+}
+li {
+  float: left;
+  border-right: 1px solid white;
+}
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+li a:hover:not(.current) {
+  background-color: rgb(0, 0, 100);
+}
+.current {
+  background-color: blue;
+}
 body {
   background-image: url(https://i.pinimg.com/736x/4b/af/2d/4baf2d48f65e51a0ec3d788e366e6b6c.jpg);
   background-size: cover;
