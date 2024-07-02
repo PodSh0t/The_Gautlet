@@ -1,7 +1,3 @@
-*:not(.button) {
-    color: white;
-    text-align: center;
-}
   ul {
   position: fixed;
   top: 0;
@@ -37,4 +33,97 @@ body {
   background-repeat: no-repeat;
   background-color: black;
   position: relative;
+}
+/*slideshow bullshit*/
+*{box-sizing:border-box}
+img {vertical-align: middle;}
+
+.slideshowContainer {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+}
+.slide{
+  display: none;
+}
+#slide1{
+  display: block;
+}
+.previous,.next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+.previous:hover,.next:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 2px solid rgba(255, 255, 255, 0.75);
+}
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.desc{
+  color: white;
+  background-color: blue;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -33px;
+  border: 1px solid white;
+  width: 100%;
+  text-align: center;
+}
+.numbers{
+  color:white;
+  font-size: 15px;
+  padding: 8px 10px;
+  position: absolute;
+  top: 0;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+}
+.dot{
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: rgb(60, 60, 60);
+  border-radius: 50%;
+  border: 1px solid white;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+.active{
+  background-color: blue;
+}
+.dot:hover:not(.active){
+  background-color: rgb(0, 0, 100);
+}
+.fade {
+  animation: fade 1.5s;
+  -webkit-animation: fade 1.5s;
+}
+@keyframes fade{
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+@-webkit-keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
 }
