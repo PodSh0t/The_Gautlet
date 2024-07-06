@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../CSS/page2CSS.css">
-        <script src="../JS/page2.js"></script>
-        <title>
-            Gauntlet {Sub-Archives}
-        </title>
-    </head>
-    <body>
-        <div>
-            <h1 id="text1">
-                <span style="text-align: center;"> Excuse me bro... </span>
-            </h1>
-            <button class="button" onclick="getElementById('englishSpanish').play();show()" style="color:white;background-color:rgb(8, 8, 8); height: 200px; width:500px;" id="bttn">
-                <span style="font-size: xx-large;"><b class="button">English or Spanish?</b></span>
-            </button>
-            <img id="playerID" src="">
-            <h1 id="text2"></h1>
-            <button class="button" onclick="document.location='../index.html'" style="color:white; background-color:blue;"> <-- BACK </button>
-        </div>
-    </body>
-    <audio id="englishSpanish" preload="auto">
-        <source src="../Resources/song.mp3" type="audio/mp3">
-        <source src="../Resources/song.mp3" type="audio/mpg">
-    </audio>
+  <head>
+    <link rel="stylesheet" href="../CSS/page2CSS.css" />
+    <script src="../JS/page2.js"></script>
+    <title>The Gauntlet {Sub-Archives}</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="../index.html">
+        Home
+      </a></li>
+      <li><a class="current" href="../HTML/page2.html">
+        Sub-Archive
+      </a></li>
+      <li><a href="../HTML/showRoom.html">
+        Showroom
+      </a></li>
+    </ul>
+    <div id="playerContainer">
+      <h1 id="text1">
+        Excuse me bro...
+      </h1>
+      <button
+        class="button btnGrey btnCenter"
+        id="bttn"
+        onclick="getElementById('englishSpanish').play();show()"
+      >
+        English or Spanish?
+      </button>
+      <img id="playerID"/>
+    </div>
+    <h1 id="text2"></h1>
+        <!--fixed the z-index issue by making the buttons opacity <1 for some reason-->
+      <button
+        class="button btnBlue btnRound"
+        id="reload"
+        style="display: none; opacity: .99; z-index: 1;"
+        onclick="document.location='../HTML/page2.html'"
+      >
+        <-- BACK
+      </button>
+  </body>
+  <audio id="englishSpanish" preload="auto">
+    <source src="../Resources/song.mp3" type="audio/mp3" />
+    <source src="../Resources/song.mp3" type="audio/mpg" />
+  </audio>
 </html>

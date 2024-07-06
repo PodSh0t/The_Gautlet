@@ -7,13 +7,22 @@
     <link rel="icon" type="image/x-icon" href="Resources/favicon.ico" />
   </head>
   <body>
+    <ul>
+      <li><a class="current" href="index.html">
+        Home
+      </a></li>
+      <li><a href="../HTML/page2.html">
+        Sub-Archive
+      </a></li>
+      <li><a href="../HTML/showRoom.html">
+        Showroom
+      </a></li>
+    </ul>
     <div id="everything">
       <h1>Welcome to <span style="color: darkred"> The Gauntlet </span></h1>
-      <h2>
-        <span style="color: goldenrod"
-          >Be ready to throw down, or go down. You come here a cs major, and
-          leave as a simpleton.</span
-        >
+      <h2 class="gold">
+        Be ready to throw down, or go down. You come here a cs major, and leave
+        as a simpleton.
       </h2>
       <h2>This is a hedding, hedding to your moms house!!!</h2>
       <p>
@@ -32,41 +41,34 @@
       </p>
       <img
         src="https://cdn.mos.cms.futurecdn.net/4NkqCjCzUGMnopfx2GgpEm.jpeg"
-        style="width: 600px; height: 300px" />
+        style="width: 600px; height: 300px"
+      />
       <img
         src="https://media3.giphy.com/media/E6jscXfv3AkWQ/200w.gif?cid=6c09b952a0aj296is0u4cydko53tiz150ql1vndc3ed4avis&ep=v1_gifs_search&rid=200w.gif&ct=g"
-        style="height: 300px; width: 345px" />
+        style="height: 300px; width: 345px"
+      />
       <hr />
       <button
-        class="button"
+        class="button btnBlue btnLarge btnRound"
         onclick="document.location='HTML/page2.html'"
-        style="
-          color: white;
-          background-color: blue;
-          height: 50px;
-          width: 950px;
-          font-size: x-large;
-        ">
-        <b class="button"> >>> CLICK ME <<< </b>
+      >
+        >>> CLICK ME <<<
       </button>
       <hr />
       <h1>Tooling Around in js ignore me.</h1>
       <h1 id="number">1</h1>
-      <button class="button" onclick="plusOne()">+1</button>
-      <button class="button" onclick="letsMultiply()">
+      <button class="button btnWhite btnRound" onclick="addition(1)">+1</button>
+      <button class="button btnWhite btnRound" onclick="multiply(2)">
         Click to make bigger number
       </button>
-      <button
-        class="button"
-        onclick="nuke()"
-        style="color: white; background-color: red">
+      <button class="button btnRed" onclick="nuke()">
         Don't touch me I delete the page
       </button>
-      <button class="button" onclick="letsDivide()">
+      <button class="button btnWhite btnRound" onclick="multiply(.5)">
         Click me to make smaller number
       </button>
-      <button class="button" onclick="minusOne()">-1</button>
+      <button class="button btnWhite btnRound" onclick="addition(-1)">-1</button>
     </div>
-    <h1 id="postNuke"></h1>
+    <h1 style="margin-top: 250px; display: none;" id="postNuke"></h1>
   </body>
 </html>

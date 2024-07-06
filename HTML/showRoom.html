@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../CSS/showRoom.css"/>
+    <script src="../JS/showRoom.js"></script>
+    <title>The Gauntlet {Showroom}</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="../index.html">
+        Home
+      </a></li>
+      <li><a href="../HTML/page2.html">
+        Sub-Archive
+      </a></li>
+      <li><a class="current" href="../HTML/showRoom.html">
+        Showroom
+      </a></li>
+    </ul>
+<!--might scrap and replace this whole shitty slideshow with one you can swipe through eventually-->
+    <div class="slideshowContainer">
+
+      <div id="slide1" class="slide fade">
+        <div class="numbers">1 / 4</div>
+        <img src="https://www.animationmagazine.net/wordpress/wp-content/uploads/office-ext-1.jpg" style="width: 100%;">
+        <div class="desc">First Image</div>
+      </div>
+
+      <div class="slide fade">
+        <div class="numbers">2 / 4</div>
+        <img src="https://i.redd.it/o5kgd8la79081.png" style="width: 100%;">
+        <div class="desc">Second Image</div>
+      </div>
+
+      <div class="slide fade">
+        <div class="numbers">3 / 4</div>
+        <img src="https://dripteamprints.com/cdn/shop/files/image_ce6ef8f1-dd98-48f9-961d-c1c32f5881a9.heic?v=1685470631&width=1946" style="width: 100%;">
+        <div class="desc">3rd Image</div>
+      </div>
+
+      <div class="slide fade">
+        <div class="numbers">4 / 4</div>
+        <img src="https://preview.redd.it/scs-good-deployments-v0-2o88s50q6ggc1.jpeg?width=1080&crop=smart&auto=webp&s=bc1e13146388f7b8cbf1c3980076cafb19c4aa96" style="width: 100%;">
+        <div class="desc">4</div>
+      </div>
+
+      <a class="previous" onclick="changeSlide(-1)"> &#10094; </a>
+      <a class="next" onclick="changeSlide(1)"> &#10095; </a>
+
+    </div>
+    <br>
+    <div style="text-align: center;">
+      <span class="dot active" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+  </body>
+</html>
