@@ -14,6 +14,4 @@ function show() {
     text2.classList.add ("expand")
   document.getElementById("reload")
     .style.display = "";
-    //this might not work
-    reload.style = "z-index: 1"
-};
+}

@@ -1,4 +1,13 @@
-  ul {
+body {
+  background-image: url(https://i.pinimg.com/736x/4b/af/2d/4baf2d48f65e51a0ec3d788e366e6b6c.jpg);
+  background-size: cover;
+  background-position: top,right;
+  background-repeat: no-repeat;
+  background-color: black;
+  position: relative;
+  margin-top: 75px;
+}
+ul {
   position: fixed;
   top: 0;
   margin: 0;
@@ -8,6 +17,7 @@
   background-color: rgb(30, 30, 30);
   border: 1px solid white;
   z-index: 2;
+  border-radius: 0 0 16px 16px;
 }
 li {
   float: left;
@@ -26,14 +36,6 @@ li a:hover:not(.current) {
 .current {
   background-color: blue;
 }
-body {
-  background-image: url(https://i.pinimg.com/736x/4b/af/2d/4baf2d48f65e51a0ec3d788e366e6b6c.jpg);
-  background-size: cover;
-  background-position: top,right;
-  background-repeat: no-repeat;
-  background-color: black;
-  position: relative;
-}
 /*slideshow bullshit*/
 *{box-sizing:border-box}
 img {vertical-align: middle;}
@@ -42,7 +44,6 @@ img {vertical-align: middle;}
   max-width: 1000px;
   position: relative;
   margin: auto;
-  margin-top: 50px;
 }
 .slide{
   display: none;

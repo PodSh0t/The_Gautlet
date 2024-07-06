@@ -17,7 +17,7 @@
         Showroom
       </a></li>
     </ul>
-    <div id="playerContainer" style="padding:20px;margin-top:30px;z-index: -1;">
+    <div id="playerContainer">
       <h1 id="text1">
         Excuse me bro...
       </h1>
@@ -28,15 +28,14 @@
       >
         English or Spanish?
       </button>
-      <img id="playerID" style="z-index: -1;"/>
+      <img id="playerID"/>
     </div>
     <h1 id="text2"></h1>
-        <!--Cant figure out why sometimes the image while rotating makes this button unclickable
-        z-indexing seems to do nada-->
+        <!--fixed the z-index issue by making the buttons opacity <1 for some reason-->
       <button
         class="button btnBlue btnRound"
         id="reload"
-        style="display: none"
+        style="display: none; opacity: .99; z-index: 1;"
         onclick="document.location='../HTML/page2.html'"
       >
         <-- BACK

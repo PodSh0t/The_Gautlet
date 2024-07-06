@@ -18,7 +18,7 @@
         Showroom
       </a></li>
     </ul>
-    <div id="everything" style="padding:20px;margin-top:30px">
+    <div id="everything">
       <h1>Welcome to <span style="color: darkred"> The Gauntlet </span></h1>
       <h2 class="gold">
         Be ready to throw down, or go down. You come here a cs major, and leave
@@ -57,18 +57,18 @@
       <hr />
       <h1>Tooling Around in js ignore me.</h1>
       <h1 id="number">1</h1>
-      <button class="button btnWhite btnRound" onclick="plusOne()">+1</button>
-      <button class="button btnWhite btnRound" onclick="letsMultiply()">
+      <button class="button btnWhite btnRound" onclick="addition(1)">+1</button>
+      <button class="button btnWhite btnRound" onclick="multiply(2)">
         Click to make bigger number
       </button>
       <button class="button btnRed" onclick="nuke()">
         Don't touch me I delete the page
       </button>
-      <button class="button btnWhite btnRound" onclick="letsDivide()">
+      <button class="button btnWhite btnRound" onclick="multiply(.5)">
         Click me to make smaller number
       </button>
-      <button class="button btnWhite btnRound" onclick="minusOne()">-1</button>
+      <button class="button btnWhite btnRound" onclick="addition(-1)">-1</button>
     </div>
-    <h1 id="postNuke"></h1>
+    <h1 style="margin-top: 250px; display: none;" id="postNuke"></h1>
   </body>
 </html>
