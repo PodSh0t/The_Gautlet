@@ -1,0 +1,80 @@
+* {
+  color: white;
+}
+
+body {
+  background-color: rgb(12, 12, 12);
+  background-size: auto;
+  background-position: top;
+  background-repeat: repeat-;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+/* NAVBAR */
+/* fuck u troy */
+  ul {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    margin-left: -7px;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    /* I hate the brick ngl */
+    background-image: url(https://img.freepik.com/free-photo/brick-wall-background-texture_1048-17010.jpg);
+    background-color: rgb(6, 6, 6);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0px 0px 16px 16px;
+    width: 100%;
+    text-align: center;
+  }
+  li {
+    display: inline-block;
+  }
+  li a {
+    display: block;
+    text-decoration: none;
+    padding: 16px 20px;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    font-family: "Roboto", sans-serif;
+    text-decoration: underline;
+  }
+  li a:hover:not(.currentNav) {
+    border-radius: 0px 0px 12px 12px;
+    color: rgb(130, 3, 0);
+  }
+  .currentNav {
+    color: rgb(184, 0, 0);
+    font-weight: bolder;
+    border-radius: 0px 0px 12px 12px;
+  }
+
+.profileContainer{
+  position: fixed;
+  top: 1.5em;
+  right: 4.5em;
+}
+.profileImage {
+  position: fixed;
+  top: .4em;
+  right: 1em;
+  max-height: 3em;
+  max-width: 3em;
+  border-radius: 100%;
+}
+/* MAIN BODY OF THE PAGE */
+.centerContainer {
+  position: static;
+  height: 1000vh;
+  background-color: rgb(16, 16, 16);
+  margin-top: -8px;
+  margin-left: 15%;
+  margin-right: 15%;
+  border: 0.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px 16px 16px 16px;
+  text-align: center;
+}
+.centerContent {
+  margin-top: 5em;
+}
