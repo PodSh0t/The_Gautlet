@@ -5,7 +5,7 @@
 body {
   background-image: url(https://i.pinimg.com/736x/4b/af/2d/4baf2d48f65e51a0ec3d788e366e6b6c.jpg);
   background-size: cover;
-  background-position: top,right;
+  background-position: top, right;
   background-repeat: no-repeat;
   background-color: black;
   position: relative;
@@ -28,7 +28,7 @@ li {
   float: left;
   border-right: 1px solid white;
 }
-li a{
+li a {
   display: block;
   color: white;
   text-align: center;
@@ -51,22 +51,30 @@ seperated colors and font changes for shits n giggles n ease of use*/
   color: white;
   border: 2px solid rgb(150, 150, 150);
 }
-.btnBlue:hover {background-color: rgb(0, 0, 100);}
+.btnBlue:hover {
+  background-color: rgb(0, 0, 100);
+}
 .btnRed {
   background-color: red;
   color: white;
 }
-.btnRed:hover {background-color: rgb(100, 0, 0);}
+.btnRed:hover {
+  background-color: rgb(100, 0, 0);
+}
 .btnWhite {
   background-color: white;
   color: black;
 }
-.btnWhite:hover {background-color: rgb(160, 160, 160);}
+.btnWhite:hover {
+  background-color: rgb(160, 160, 160);
+}
 .btnGrey {
   background-color: rgb(8, 8, 8);
   color: white;
 }
-.btnGrey:hover {background-color: rgb(30, 30, 30);}
+.btnGrey:hover {
+  background-color: rgb(30, 30, 30);
+}
 .btnLarge {
   font-weight: bold;
   font-size: 25px;
@@ -93,18 +101,34 @@ seperated colors and font changes for shits n giggles n ease of use*/
   -webkit-animation: expand 60s linear;
 }
 @keyframes rotate {
-  from{transform: rotate(0deg);}
-  to{transform: rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 @-webkit-keyframes rotate {
-  from{-webkit-transform: rotate(0deg);}
-  to{-webkit-transform: rotate(360deg);}
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }
 @keyframes expand {
-  from {transform: scale(0);}
-  to {transform: scale(1);}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 @-webkit-keyframes expand {
-  from {-webkit-transform: scale(0);}
-  to {-webkit-transform: scale(1);}
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
 }
