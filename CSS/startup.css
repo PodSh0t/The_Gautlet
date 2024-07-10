@@ -1,0 +1,179 @@
+* {
+  color: white;
+}
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+/* NAVBAR */
+ul {
+  position: fixed;
+  top: 0;
+  margin: 0;
+  margin-left: -8px;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  /* I hate the brick ngl */
+  /* background-image: url(https://img.freepik.com/free-photo/brick-wall-background-texture_1048-17010.jpg); */
+  background-color: rgb(6, 6, 6);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0px 0px 16px 16px;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+  user-select: none;
+}
+li {
+  display: inline-block;
+}
+li a {
+  display: block;
+  text-decoration: none;
+  padding: 16px 20px;
+  color: rgb(255, 255, 255);
+  font-size: x-large;
+  font-family: "Roboto", sans-serif;
+  text-decoration: underline;
+}
+li a:hover:not(.currentNav) {
+  border-radius: 0px 0px 12px 12px;
+  color: rgb(130, 3, 0);
+}
+.currentNav {
+  color: rgb(184, 0, 0);
+  font-weight: bolder;
+  border-radius: 0px 0px 12px 12px;
+}
+.profileContainer {
+  position: fixed;
+  top: 1.5em;
+  right: 4.5em;
+  z-index: 3;
+}
+.profileImage {
+  position: fixed;
+  top: 0.4em;
+  right: 1em;
+  max-height: 3em;
+  max-width: 3em;
+  border-radius: 100%;
+}
+/* ENDOFNAV */
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-height: 100vw;
+  margin: -10px -10px;
+}
+.text1 {
+  position: absolute;
+  text-align: center;
+  margin-top: 26vw;
+  width: 100%;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 400%;
+  font-variant: small-caps;
+  user-select: none;
+}
+
+.foregroundContainer {
+  padding: 0;
+  margin: -10px -10px;
+  max-height: 100vw;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-right: 10px solid black;
+  border-bottom: 10px solid black;
+}
+.gate {
+  position: absolute;
+  max-height: 100vw;
+  height: 100%;
+  width: 100%;
+  filter: brightness(15%);
+}
+.foreground {
+  position: absolute;
+  max-height: 100vw;
+  height: 100%;
+  width: 100%;
+}
+.continueNext {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+}
+
+/* TRANSFORMS */
+.gone {
+  display: none;
+}
+.goUppy {
+  animation: up 6.2s linear;
+  -webkit-animation: up 6.2s linear;
+}
+.expand {
+  animation: expand 60s linear;
+  -webkit-animation: expand 60s linear;
+}
+.fadeIn {
+  animation: fade 4s linear;
+  -webkit-animation: fade 4s linear;
+}
+@keyframes up {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0px, -600px);
+  }
+}
+@-webkit-keyframes up {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0px, -600px);
+  }
+}
+@keyframes expand {
+  from {
+    transform: scale(1) translate(0px, 0px);
+  }
+  to {
+    transform: scale(14) translate(0px, -900px);
+  }
+}
+@-webkit-keyframes expand {
+  from {
+    -webkit-transform: scale(1) translate(0px, 0px);
+  }
+  to {
+    -webkit-transform: scale(14) translate(0px, -900px);
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

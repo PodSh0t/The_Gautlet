@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="../CSS/startup.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <script src="../JS/bowsersCastle.js"></script>
+    <title>The Gauntlet</title>
+  </head>
+  <body>
+    <div>
+      <nav>
+        <ul>
+          <li>
+            <a href="../HTML/bowsersCastle.html"> Home </a>
+          </li>
+          <li>
+            <a href="#following"> Following </a>
+          </li>
+          <li><a href="#discover"> Discover </a></li>
+          <li><a href="#gauntlet">Gauntlet</a></li>
+          <li><a href="#champion">Champion</a></li>
+        </ul>
+      </nav>
+      <div class="profileContainer">
+        <a
+          id="userID"
+          href="#login"
+          >USER NAME
+          <img
+            id="userImage"
+            href="#login"
+            src="https://media.istockphoto.com/id/665692578/vector/cartoon-clown-face-vector-illustration.jpg?s=612x612&w=0&k=20&c=y_YlUznm-DrwRZsu9DyixUjVLy1ug2m6JBJH1ppD1w0="
+            class="profileImage">
+        </a>
+      </div>
+    </div>
+    <div>
+    <image
+      class="background"
+      src="https://t4.ftcdn.net/jpg/00/45/48/15/360_F_45481569_9pSvUWXde83qEmEXqHztj71EwQVfo1ao.jpg"
+      draggable="false"/>
+      <h1 id="text1" class="text1 gone">Welcome to the Gauntlet</h1> 
+    </div>
+    <div
+      id="foregroundContainer"
+      class="foregroundContainer">
+      <button
+        id="nextBtn"
+        class="continueNext"
+        onclick="getElementById('metal').play();getElementById('plin').play();button()">
+        CLICK TO GO NEXT
+      </button>
+      <img
+        id="gate"
+        class="gate"
+        src="../Resources/gate.webp"
+        draggable="false" />
+      <img
+        id="foreground"
+        class="foreground"
+        src="../Resources/5.png"
+        draggable="false" />
+    </div>
+  </body>
+  <audio
+    id="metal"
+    preload="auto">
+    <source
+      src="../Resources/metal.mp3"
+      type="audio/mp3" />
+    <source
+      src="../Resources/metal.mp3"
+      type="audio/mpg" />
+  </audio>
+  <audio
+    id="plin"
+    preload="auto">
+    <source
+      src="../Resources/plin.mp3"
+      type="audio/mp3" />
+    <source
+      src="../Resources/plin.mp3"
+      type="audio/mpg" />
+  </audio>
+</html>
